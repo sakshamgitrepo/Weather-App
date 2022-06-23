@@ -12,12 +12,14 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 .city{
     font-size: 2.3rem;
     margin-bottom: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(185, 180, 180);
     width: max-content;
 }
+
 
 .icon_desc{
 display: flex;
@@ -30,7 +32,7 @@ align-items: center;
     color: aliceblue;
     border-radius: 20px;
     width: 400px;
-    box-shadow: 1px 1px 3px gray ;
+    box-shadow: 1px 1px 2px 2px inset gray ;
 }
 .search{
     display: flex;
@@ -40,10 +42,10 @@ align-items: center;
 }
 .searchbox{
     padding: .5rem .8rem;
-    border-radius: 20px;
+    border-radius: 16px;
     outline: none;
     border: none;
-    background: rgba(145, 140, 140, 0.842);
+    background: rgba(97, 96, 96, 0.788);
     font-size: 1rem;
     width:70%;
     color: antiquewhite;
@@ -51,20 +53,34 @@ align-items: center;
 
 }
 button{
-    border-radius: 50%;
+    margin-left: 1rem;
+    border-radius: 30%;
+    border: 1px solid rgb(97, 96, 96);
     width: 40px;
     background: rgba(107, 105, 105, 0.842);
     color: antiquewhite;
 }
-
+button:hover{
+    background-color: rgb(32, 36, 36);
+}
 .weatherbox{
     display: flex;
     flex-direction: column;
     padding: 1.2rem;
     justify-content: space-around;
-
-
+    align-items: center;
 }
+.weatherbox.load{
+    visibility: hidden;
+    position: relative;
+}
+
+.weatherbox.load::after{
+    content: "Loading...";
+    visibility: visible;
+    position: absolute;
+}
+
 
 @media all and (max-width: 600px) {
    .card{
