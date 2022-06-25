@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     background-position: center;
     background-size: cover;
@@ -69,6 +69,7 @@ button:hover{
     padding: 1.2rem;
     justify-content: space-around;
     align-items: center;
+    font-size: larger;
 }
 .weatherbox.load{
     visibility: hidden;
